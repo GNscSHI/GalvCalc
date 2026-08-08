@@ -1,0 +1,1 @@
+"""Trained CGCNN model checkpoints."""
