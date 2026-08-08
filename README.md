@@ -2,7 +2,6 @@
   <img src="GalvCalc/assets/logo.png" alt="GalvCalc" width="400"/>
 </p>
 
-<h1 align="center">GalvCalc</h1>
 
 <p align="center">
   <em>From atomic-scale descriptors to macroscopic corrosion polarization curves</em>
