@@ -49,9 +49,9 @@ Coupled Anodic Dissolution and Hydrogen Evolution Kinetics"*.
 - DFT-grounded second-phase exchange currents for nine common Mg-alloy
   intermetallics (Mg17Al12, Mg2Al3, MgZn2, LaMg12, CaMg2, Y5Mg24, NdMg3,
   Mg2Si, CeMg12).
-- CGCNN prediction of surface energies and work functions, and TabPFN
-  in-context prediction of hydrogen adsorption energies from your own
-  reference data.
+- CGCNN prediction of surface energies and work functions, and
+  TabPFN-based prediction of hydrogen adsorption energies from your own
+  training set.
 
 ---
 
