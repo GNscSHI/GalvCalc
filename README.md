@@ -49,9 +49,9 @@ Coupled Anodic Dissolution and Hydrogen Evolution Kinetics"*.
 - DFT-grounded second-phase exchange currents for nine common Mg-alloy
   intermetallics (Mg17Al12, Mg2Al3, MgZn2, LaMg12, CaMg2, Y5Mg24, NdMg3,
   Mg2Si, CeMg12).
-- Pre-trained ML models included (CGCNN + TabPFN) — no retraining required.
-- Publication-quality figures with clean current-tick labels and properly
-  typeset sub/superscripts.
+- CGCNN prediction of surface energies and work functions, and TabPFN
+  in-context prediction of hydrogen adsorption energies from your own
+  reference data.
 
 ---
 
@@ -237,18 +237,6 @@ same folder.
 galvcalc --version     # GalvCalc 1.0.0
 galvcalc --modules     # list available submodules
 ```
-
----
-
-## Citation
-
-If you use GalvCalc in your research, please cite:
-
-> Shi, G. *et al.* GalvCalc: A Framework for Modeling Micro-galvanic Corrosion
-> of Alloys with Coupled Anodic Dissolution and Hydrogen Evolution Kinetics.
-> (manuscript)
-
----
 
 ## License
 
