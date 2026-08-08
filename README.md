@@ -35,7 +35,7 @@ Coupled Anodic Dissolution and Hydrogen Evolution Kinetics"*.
 | `GalvCalc.cathode` | Surface-property manager (surface energies, work functions, Wulff shapes), hydrogen-adsorption analysis, facet-weighted exchange-current estimation |
 | `GalvCalc.anode` | Substitutional surface doping of anode materials and electrochemical descriptor tables |
 | `GalvCalc.polarization` | Butler–Volmer polarization curves, multi-anode/multi-cathode plots, area-ratio optimization, alloy-content scans |
-| `GalvCalc.predictor` | ML predictors (CGCNN / TabPFN) for surface properties and hydrogen adsorption energies |
+| `GalvCalc.predictor` | ML predictors (CGCNN / TabPFN) for surface properties and hydrogen adsorption free energies |
 
 **Highlights**
 
@@ -45,10 +45,10 @@ Coupled Anodic Dissolution and Hydrogen Evolution Kinetics"*.
   by a built-in thermodynamic ion-energy database.
 - Calibrated Butler–Volmer kinetics for both Mg- and Fe-based systems.
 - DFT-grounded second-phase exchange currents for nine common Mg-alloy
-  intermetallics (Mg17Al12, Mg2Al3, MgZn2, LaMg12, CaMg2, Y5Mg24, NdMg3,
-  Mg2Si, CeMg12).
+  intermetallics (Mg<sub>17</sub>Al<sub>12</sub>, Mg<sub>2</sub>Al<sub>3</sub>, MgZn<sub>2</sub>, LaMg<sub>12</sub>, CaMg<sub>2</sub>, Y<sub>5</sub>Mg<sub>24</sub>, NdMg<sub>3</sub>,
+  Mg<sub>2</sub>Si, CeMg<sub>12</sub>).
 - CGCNN prediction of surface energies and work functions, and
-  TabPFN-based prediction of hydrogen adsorption energies.
+  TabPFN-based prediction of hydrogen adsorption free energies.
 
 ---
 
@@ -89,7 +89,7 @@ Ee = Bulk.get_equilibrium_potential(
 )
 print(f"E_eq = {Ee:.3f} V vs. SHE")
 
-# Multi-ion dissolution, e.g. Mg2Ge
+# Multi-ion dissolution, e.g. Mg<sub>2</sub>Ge
 Ee2 = Bulk.get_equilibrium_potential(
     ions="Mg[2+], Ge[2+]",
     ion_numbers=[2, 1],
@@ -182,7 +182,7 @@ from pymatgen.core import Structure
 # Surface energy + work function from a folder of CIF files
 res = predict_cgcnn(cifpath="surfaces_output", task="regression")
 
-# Hydrogen adsorption energy (eV) for pymatgen structures
+# Hydrogen adsorption free energy (eV) for pymatgen structures
 energies = predict([Structure.from_file("H1.vasp")])
 ```
 
@@ -223,7 +223,7 @@ Runnable notebooks are shipped under `GalvCalc/examples/`:
   area-ratio optimization and alloy-content scans.
 
 Example structures (`POSCAR`, `*.poscar`, `*.vasp`, `surface/*.vasp`) and the
-Mg2Si DFT adsorption dataset (`adsorption_analysis.csv`) are bundled in the
+Mg<sub>2</sub>Si DFT adsorption dataset (`adsorption_analysis.csv`) are bundled in the
 same folder.
 
 ---
