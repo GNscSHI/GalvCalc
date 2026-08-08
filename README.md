@@ -47,8 +47,8 @@ Coupled Anodic Dissolution and Hydrogen Evolution Kinetics"*.
   by a built-in thermodynamic ion-energy database.
 - Calibrated Butler–Volmer kinetics for both Mg- and Fe-based systems.
 - DFT-grounded second-phase exchange currents for nine common Mg-alloy
-  intermetallics (Mg₁₇Al₁₂, Mg₂Al₃, MgZn₂, LaMg₁₂, CaMg₂, Y₅Mg₂₄, NdMg₃,
-  Mg₂Si, CeMg₁₂).
+  intermetallics (Mg<sub>17</sub>Al<sub>12</sub>, Mg<sub>2</sub>Al<sub>3</sub>, MgZn<sub>2</sub>, LaMg<sub>12</sub>, CaMg<sub>2</sub>, Y<sub>5</sub>Mg<sub>24</sub>, NdMg<sub>3</sub>,
+  Mg<sub>2</sub>Si, CeMg<sub>12</sub>).
 - CGCNN prediction of surface energies and work functions, and
   TabPFN-based prediction of hydrogen adsorption energies.
 
@@ -91,7 +91,7 @@ Ee = Bulk.get_equilibrium_potential(
 )
 print(f"E_eq = {Ee:.3f} V vs. SHE")
 
-# Multi-ion dissolution, e.g. Mg₂Ge
+# Multi-ion dissolution, e.g. Mg<sub>2</sub>Ge
 Ee2 = Bulk.get_equilibrium_potential(
     ions="Mg[2+], Ge[2+]",
     ion_numbers=[2, 1],
@@ -225,7 +225,7 @@ Runnable notebooks are shipped under `GalvCalc/examples/`:
   area-ratio optimization and alloy-content scans.
 
 Example structures (`POSCAR`, `*.poscar`, `*.vasp`, `surface/*.vasp`) and the
-Mg₂Si DFT adsorption dataset (`adsorption_analysis.csv`) are bundled in the
+Mg<sub>2</sub>Si DFT adsorption dataset (`adsorption_analysis.csv`) are bundled in the
 same folder.
 
 ---
