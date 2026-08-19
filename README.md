@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="GalvCalc/assets/logo.tif" alt="GalvCalc" width="400"/>
+  <img src="GalvCalc/assets/logo.png" alt="GalvCalc" width="400"/>
 </p>
 
 <p align="center">
