@@ -2,7 +2,8 @@ include README.md
 include LICENSE
 include pyproject.toml
 recursive-include GalvCalc/examples *.poscar *.vasp *.csv *.ipynb *.png
+include GalvCalc/examples/POSCAR
 recursive-include GalvCalc/predictor *.json *.xlsx *.pkl *.pth.tar *.md
-recursive-include GalvCalc/assets *.png
+recursive-include GalvCalc/assets *.tif
 exclude GalvCalc/examples/galvcalc_demo_executed.ipynb
 exclude GalvCalc/examples/test_10.4.ipynb

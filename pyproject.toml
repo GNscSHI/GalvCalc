@@ -88,6 +88,7 @@ GalvCalc = [
     "predictor/Eads/utils/*.pkl",
     "predictor/surface_properties/*.json",
     "predictor/surface_properties/models/*.pth.tar",
+    "examples/POSCAR",
     "examples/*.poscar",
     "examples/*.vasp",
     "examples/*.csv",
